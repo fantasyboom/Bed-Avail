@@ -10,18 +10,18 @@ import Signup from './pages/Signup'
 import PatientDashboard from './pages/PatientDashboard'
 import BedAvail from './pages/BedAvail'
 
-import { createClient } from '@supabase/supabase-js'
+// import { createClient } from '@supabase/supabase-js'
 import AboutPage from './pages/AboutPage'
 import ServicesPage from './pages/ServicePage'
 
 
 // Create a single supabase client for interacting with your database
-const supabaseUrl = process.env.REACT_APP_SUPABASE_URL;
-const supabaseApiKey = process.env.REACT_APP_SUPABASE_API_KEY;
+// const supabaseUrl = process.env.REACT_APP_SUPABASE_URL;
+// const supabaseApiKey = process.env.REACT_APP_SUPABASE_API_KEY;
 
-export const supabase = createClient(supabaseUrl, supabaseApiKey);
+// export const supabase = createClient(supabaseUrl, supabaseApiKey);
 
-console.log(supabase)
+// console.log(supabase)
 
 
 function App() {
