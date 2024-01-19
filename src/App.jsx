@@ -16,13 +16,16 @@ import ServicesPage from './pages/ServicePage'
 
 
 // Create a single supabase client for interacting with your database
-export  const supabase = createClient('https://bsjnweymdhhztedvtcez.supabase.co','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJzam53ZXltZGhoenRlZHZ0Y2V6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDM5NTg3NzAsImV4cCI6MjAxOTUzNDc3MH0.fQsaTn0-A9Mp-h-KojgtqqFzgGwS2AQrbDb2dbt540I')
+const supabaseUrl = process.env.REACT_APP_SUPABASE_URL;
+const supabaseApiKey = process.env.REACT_APP_SUPABASE_API_KEY;
+
+export const supabase = createClient(supabaseUrl, supabaseApiKey);
 
 console.log(supabase)
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
