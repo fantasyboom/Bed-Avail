@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { supabase } from '../App'; // Import your Supabase configuration
+import { supabase } from '../../supabase.config'; // Import your Supabase configuration
 import Navbar from '../components/navbar';
 
 const BedAvail = () => {
