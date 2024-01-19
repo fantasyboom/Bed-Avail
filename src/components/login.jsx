@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
 import '../App.css'
-import { supabase } from '../App';
+import { supabase } from '../../supabase.config';
 
 
 

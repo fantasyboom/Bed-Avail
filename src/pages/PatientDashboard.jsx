@@ -2,7 +2,7 @@
 import React, { useState,useEffect } from "react";
 import Navbar from "../components/navbar";
 import Search from "../components/search";
-import { supabase } from "../App";
+import { supabase } from "../../supabase.config";
 
 export default function PatientDashboard() {
   const [isNameSearchVisible, setIsNameSearchVisible] = useState(false);

@@ -9,7 +9,7 @@ import { redirect, useNavigate } from "react-router-dom";
 // import { createUser, auth } from "../firebaseConfig.js";
 // import HomeNavbar from "./HomeNavbar.js";
 import Navbar from "../components/navbar.jsx";
-import { supabase } from '../App';
+import { supabase } from "../../supabase.config.js";
 import { Link } from "react-router-dom";
 
 //const api_key= `${process.env.API_KEY}`;
